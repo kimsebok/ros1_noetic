@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node pkg="md" type="md_robot_node" name="md_robot_node" output="screen">
+        <param name = "use_MDUI"                    value = "0"/>       
+        <param name = "wheel_radius"                value = "0.065"/>  
+        <param name = "wheel_length"                value = "0.316"/>   
+        <param name = "motor_pole"                  value = "20"/> 
+        <param name = "reduction"                   value = "30"/> 
+        <param name = "reverse_direction"           value = "0"/>     
+        <param name = "maxrpm"                      value = "50"/>  
+        <param name = "motor_posi"                  value = "0"/>     
+        <param name = "encoder_PPR"                 value = "4096"/> 
+        <param name = "position_proportion_gain"    value = "20"/>  
+        <param name = "speed_proportion_gain"       value = "50"/>  
+        <param name = "integral_gain"               value = "1800"/> 
+        <param name = "slow_start"                  value = "800"/> 
+        <param name = "slow_down"                   value = "800"/> 
+    </node>
+</launch>
