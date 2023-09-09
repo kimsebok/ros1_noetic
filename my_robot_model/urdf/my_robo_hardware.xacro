@@ -123,7 +123,7 @@
 
   <!--========================================== LEFT WHEEL JOINT ==========================================-->
   <joint name="left_wheel_joint" type="continuous">
-    <origin xyz="0.0 -0.158075 0.065" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.0 0.158075 0.065" rpy="0.0 0.0 0.0"/>
     <parent link="base_link" />
     <child link="left_wheel_link" />
     <axis xyz="0 1 0" />
@@ -168,7 +168,7 @@
 
 <!--========================================== RIGHT WHEEL JOINT ==========================================-->
 <joint name="right_wheel_joint" type="continuous">
-  <origin xyz="0.0 0.158075 0.065" rpy="0 0.0 0.0"/>
+  <origin xyz="0.0 -0.158075 0.065" rpy="0 0.0 0.0"/>
   <parent link="base_link" />
   <child link="right_wheel_link" />
   <axis xyz="0 1 0" />
@@ -226,7 +226,7 @@
 
   <!--============================================ FRONT CASTOR WHEEL JOINT ============================================-->
   <joint name="front_castor_wheel_joint" type="fixed">
-    <origin xyz="0.2 0.0 0.0252" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.2 0.0 0.026" rpy="0.0 0.0 0.0"/>
     <parent link="base_link" />
     <child link="front_castor_wheel_link" />
     <axis xyz="0 0 0" />
@@ -274,7 +274,7 @@
 
   <!--============================================ REAR CASTOR WHEEL JOINT ============================================-->
   <joint name="rear_castor_wheel_joint" type="fixed">
-    <origin xyz="-0.2 0.0 0.0252" rpy="0.0 0.0 0.0"/>
+    <origin xyz="-0.2 0.0 0.026" rpy="0.0 0.0 0.0"/>
     <parent link="base_link" />
     <child link="rear_castor_wheel_link" />
     <axis xyz="0 0 0" />
